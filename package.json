@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "build10.5": "docker buildx build -f 10.5.Dockerfile --platform linux/amd64,linux/arm64 -t louislam/mariadb-with-mroonga:10.5 . --push",
+        "build": "npm run build10.5"
+    }
+}
